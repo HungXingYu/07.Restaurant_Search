@@ -54,6 +54,36 @@
 
 <h2 id="5">專案安裝流程--Installing</h2>
 
+>1. 打開終端機(Git Bash or Terminal)，進入您要clone此專案的目錄底下(EX：D槽)
+>```
+>$ cd d:
+>```
+
+>2. Clone 此專案至該目錄底下
+>```
+>$  git clone https://github.com/>HungXingYu/07.Restaurant_Search.git
+>```
+
+>3. 進入此專案資料夾
+>```
+>$ cd 07.Restaurant_Search
+>```
+
+>4. 安裝npm套件
+>```
+>$  npm install
+>```
+
+>5. 啟動伺服器並執行app.js
+>```
+>$ nodemon app.js
+>```
+>當終端機最後出現以下內容，及代表伺服器成功啟動
+>```
+>Express app listening on port 3000.
+>```
+
+>6. 開啟任一瀏覽器，輸入 http://localhost:3000 即可開始使用此專案
 
 <h2 id="6">專案開發人員--Contributor</h2>
 
