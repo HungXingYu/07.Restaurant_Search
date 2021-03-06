@@ -29,6 +29,8 @@
 
 <h2 id="3"> 專案畫面--Running the tests</h2>
 
+### [GitHub Pages](https://hungxingyu.github.io/07.Restaurant_Search/)
+
 ### 首頁
 ![homePage](/public/img/homePage.png)
 
