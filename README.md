@@ -1,8 +1,6 @@
-<head> 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script> 
-</head> 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<head>
+    <script src="https://kit.fontawesome.com/3d88a819da.js" crossorigin="anonymous"></script>
+</head>
 
 # Restaurant Search--Version1
 
@@ -50,7 +48,7 @@
 2. 使用者可以在搜尋框輸入餐廳類別關鍵字進行搜尋
 3. 使用者可以瀏覽全部餐廳
 4. 使用者可以點擊某一餐廳卡片查看該餐廳詳細資訊
-5. 使用者可以點擊 <i class="fas fa-location-arrow"></i> 跳轉至Google Map
+5. 使用者可以點擊<i class="fas fa-location-arrow"></i>跳轉至Google Map
 
 <h2 id="5">專案安裝流程--Installing</h2>
 
