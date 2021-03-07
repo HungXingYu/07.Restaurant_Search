@@ -9,8 +9,14 @@ const port = 3000
 //#endregion
 
 //#region  2. 其他需要工具
+/**Include  body-parser */
+const bodyParser = require('body-parser')
+/** node.js 的檔案系統，能夠幫助存取、讀取檔案*/
+const fs = require('fs')
 /**Include Restaurant.json */
 const restaurantList = require('./restaurant.json')
+/**Include insert_restaurant.js */
+const insertRestaurantJson = require('./insert_restaurant_json.js')
 //#endregion
 //#endregion
 
@@ -20,6 +26,8 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 /**Setting static files*/
 app.use(express.static('public'))
+/** Setting  body-parser*/
+app.use(bodyParser.urlencoded({ extended: true }))
 //#endregion
 
 //#region  Setting routes
@@ -33,7 +41,7 @@ app.get('/restaurants/:restaurant_id', (req,res)=>{
   
   res.render('show' , {restaurant})
 })
-/**Search 頁面資料取得與渲染*/
+/**Search 資料取得與渲染*/
 app.get('/search' ,(req,res) =>{
   const keyword= req.query.keyword
   let restaurants
@@ -43,6 +51,19 @@ app.get('/search' ,(req,res) =>{
    : restaurants = restaurantList.results.filter(restaurant => restaurant.category.toLowerCase().includes(keyword.toLowerCase())) 
   
    res.render('index',{restaurants , keyword})
+})
+/**Add 頁面資料取得與渲染 */
+app.get('/add' , (req,res)=>{
+  res.render('add')
+})
+/**Post 資料取得與渲染 */
+app.post('/' , (req , res) => {  
+  const newRestaurant = req.body
+  const id = parseInt(restaurantList.total)+1
+  newRestaurant.id = id  
+  restaurantList.results.push(newRestaurant)
+  res.render('index',{restaurants: restaurantList.results})
+  insertRestaurantJson(fs , newRestaurant)
 })
 //#endregion
 
