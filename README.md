@@ -85,7 +85,7 @@
 
 >2. Clone 此專案至該目錄底下
 >```
->$  git clone https://github.com/>HungXingYu/07.Restaurant_Search.git
+>$  git clone https://github.com/HungXingYu/07.Restaurant_Search.git
 >```
 
 >3. 進入此專案資料夾
