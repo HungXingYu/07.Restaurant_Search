@@ -11,6 +11,7 @@
 //       "description": "自家烘培的豆子，帶給你口味多樣的各式咖啡，也有其他飲品喔～歡迎大家前來品嚐。"
     
 // }
+/** node.js 的檔案系統，能夠幫助存取、讀取檔案*/
 const fs = require('fs')
 function insertRestaurantJson(newRestaurant){
     fs.readFile('./restaurant.json' , function(err , restaurantJson){
