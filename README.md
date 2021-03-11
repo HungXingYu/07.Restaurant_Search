@@ -1,4 +1,4 @@
-# Restaurant Search--Version2
+# Restaurant Search--Version2.0.1
 
 ## 目錄--Summary
 
@@ -12,6 +12,15 @@
 
 
 <h2 id="1"> 專案概述--Project Description</h2>
+
+>--ver2.0.1--
+>
+>主功能不變，仍為以下所述：
+>使用者可點擊Home回到首頁，在搜尋框輸入餐廳名稱或餐廳分類進行餐廳搜尋，點擊餐廳卡片會顯示該餐廳詳細資訊；點擊Add Restaurant可跳轉至新增餐廳頁面新增新的餐廳至清單
+>
+>僅優化程式碼：
+>將express-validator獨立於validator.js，使app.js中app.post()的程式碼更於易讀
+
 
 >--ver2-- 
 >
