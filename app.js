@@ -13,8 +13,6 @@ const port = 3000
 //#region  2. 其他需要工具
 /**Include  body-parser */
 const bodyParser = require('body-parser')
-/** node.js 的檔案系統，能夠幫助存取、讀取檔案*/
-const fs = require('fs')
 /**Include Restaurant.json */
 const restaurantList = require('./restaurant.json')
 /**Include insert_restaurant.js */
